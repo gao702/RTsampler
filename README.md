@@ -8,16 +8,16 @@ RTsampler
 <!-- badges: start -->
 <!-- badges: end -->
 
-Rcpp/RcppArmadillo implementation of MCMC samplers based on Reverse
+R package with Rcpp/RcppArmadillo implementation of MCMC samplers based on Reverse
 Telescoping Decomposition for Gaussian graphical models under two priors
 on the precision matrix:
 
 1.  Graphical Horseshoe (GHS)
 
-2.  Graphical Horseshoe Lasso (GHSL)
+2.  Graphical Horseshoe-like (GHSL)
 
 We provide an RT (Reverse–Telescoping) sampler alongside a baseline
-Cyclical sampler for comparison, as well as a helper function to
+Cyclical sampler for comparison, as well as example script to
 generate ground-truth precision matrices for simulation studies.
 
 ## Installation
@@ -38,13 +38,13 @@ uncertainty quantification in undirected Gaussian graphical models via
 Markov chain Monte Carlo (MCMC) under recently-developed element-wise
 graphical priors, such as the graphical horseshoe. This package allows
 posterior MCMC sampling using a reverse telescoping block decomposition
-for Gaussian Graphical Model under element-wise prior on the precision
-matrix, which has an order of magnitude time complexity reduction
-compare to the baseline sampler.
+for Gaussian Graphical Model under element-wise priors on the precision
+matrix, which achieves an order of magnitude time complexity reduction
+compared to the cyclical sampler in high dimensions.
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example script that simulates data from a multivariate normal model and fits the GHS model using RT and cyclical samplers:
 
 ``` r
 library("RTsampler")
@@ -105,4 +105,4 @@ image(est_matrix_Cyclical)
 
 \[1\] Gao, Z., Sagar, K., Bhadra, A. (2025). An Order of Magnitude Time
 Complexity Reduction for Gaussian Graphical Model Posterior Sampling
-Using a Reverse Telescoping Block Decomposition
+Using a Reverse Telescoping Block Decomposition.
