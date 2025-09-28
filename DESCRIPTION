@@ -1,11 +1,26 @@
 Package: RTsampler
-Title: What the Package Does (One Line, Title Case)
+Title: Reverse Telescoping sampler on element-wise prior for GGMs
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Date: 2025-09-29
+Authors@R: c(
+  person("Zejin", "Gao", email = "gao702@purdue.edu", role = c("aut", "cre")),
+  person("Anindya", "Bhadra", role = "aut")
+ )
+Maintainer: Zejin Gao <gao702@purdue.edu>
+Description: This package is for implementing An Order of Magnitude Time Complexity Reduction for Gaussian Graphical Model Posterior Sampling Using a Reverse Telescoping Block Decomposition.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+LinkingTo: 
+    Rcpp,
+    RcppArmadillo
+Imports: 
+    GIGrvg,
+    MASS,
+    Matrix,
+    Rcpp,
+    RcppArmadillo,
+    stats
+URL: https://github.com/gao702/RTsampler
+BugReports: https://github.com/gao702/RTsampler/issues
