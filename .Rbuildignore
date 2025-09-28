@@ -1,2 +1,6 @@
 ^RTsampler\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
+^LICENSE\.md$
+^README\.md$
+^man/figures/README-\.*$
