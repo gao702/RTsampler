@@ -3,7 +3,7 @@ RTsampler
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# RTsampler
+# Reverse Telescoping Samplers for Element-wise Graphical Priors
 
 <!-- badges: start -->
 <!-- badges: end -->
