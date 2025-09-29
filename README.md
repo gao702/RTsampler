@@ -62,7 +62,7 @@ Sigma = solve(Theta_0)
 image(Theta_0)
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" />
+<img src="man/figures/README-example-1.png" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -81,7 +81,7 @@ est_matrix_RT <- apply(out_RT[[1]],c(1,2),mean)
 image(est_matrix_RT)
 ```
 
-<img src="man/figures/README-example-2.png" width="100%" />
+<img src="man/figures/README-example-2.png" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -99,7 +99,7 @@ est_matrix_Cyclical <- apply(out_Cyclical[[1]],c(1,2),mean)
 image(est_matrix_Cyclical)
 ```
 
-<img src="man/figures/README-example-3.png" width="100%" />
+<img src="man/figures/README-example-3.png" width="100%" style="display: block; margin: auto;" />
 
 ## References:
 
