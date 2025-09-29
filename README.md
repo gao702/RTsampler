@@ -59,7 +59,7 @@ seed = 1
 ##### generate precision matrix Theta_0 and corresponding covariance Sigma #####
 Theta_0 <- generate_truth_PrecisionMat(p,structure = "cliques neg") # structure =  c("tridiagonal", "hubs", "cliques neg", "cliques pos")
 Sigma = solve(Theta_0)
-image(Theta_0)
+image(1:p,1:p,Theta_0)
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" style="display: block; margin: auto;" />
@@ -78,7 +78,7 @@ out_RT <- RT_sampler_cpp(Y,M,burnin,seed,prior)
 #> Warning in RT_sampler_cpp(Y, M, burnin, seed, prior): When called from R, the
 #> RNG seed has to be set at the R level via set.seed()
 est_matrix_RT <- apply(out_RT[[1]],c(1,2),mean)
-image(est_matrix_RT)
+image(1:p,1:p,est_matrix_RT)
 ```
 
 <img src="man/figures/README-example-2.png" width="100%" style="display: block; margin: auto;" />
@@ -96,7 +96,7 @@ out_Cyclical <- Cyclical_sampler(S,n,M, burnin, prior)
 #> iter = 6000
 #> iter = 7000
 est_matrix_Cyclical <- apply(out_Cyclical[[1]],c(1,2),mean)
-image(est_matrix_Cyclical)
+image(1:p,1:p,est_matrix_Cyclical)
 ```
 
 <img src="man/figures/README-example-3.png" width="100%" style="display: block; margin: auto;" />
