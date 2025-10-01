@@ -105,4 +105,4 @@ image(1:p,1:p,est_matrix_Cyclical)
 
 \[1\] Gao, Z., Sagar, K., Bhadra, A. (2025). An Order of Magnitude Time
 Complexity Reduction for Gaussian Graphical Model Posterior Sampling
-Using a Reverse Telescoping Block Decomposition.
+Using a Reverse Telescoping Block Decomposition. [arXiv:2509.26385](https://arxiv.org/abs/2509.26385).
