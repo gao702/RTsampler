@@ -8,3 +8,4 @@
 *.dll
 src/*.o
 RTsampler.Rproj
+README.Rmd
