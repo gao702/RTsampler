@@ -3,7 +3,7 @@
 #' \code{Cyclical_sampler} returns a list with:
 #' \itemize{
 #'   \item \code{omega}: array \eqn{p \times p \times M-burnin} of saved precision matrices;
-#'   \item \code{lambda_sq}: array \eqn{p \times p \times M-burnin} of local parameters；
+#'   \item \code{lambda_sq}: array \eqn{p \times p \times M-burnin} of local parameters;
 #'   \item \code{tau_sq}: numeric vector (\eqn{M-burnin}) of the global parameter.
 #' }
 #'
@@ -14,7 +14,7 @@
 #' @param prior character, one of \code{"GHS"} or \code{"GHSL"}.
 #' @return A list \code{list(omega, lambda_sq, tau_sq)} as described above.
 #' @export
-#' @importFrom stats rgamma runif
+#' @importFrom stats rgamma runif rnorm
 
 Cyclical_sampler <- function(S,n,M, burnin,prior)
 {

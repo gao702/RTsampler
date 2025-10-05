@@ -23,10 +23,10 @@ representing the precision matrix.
 Construct a \eqn{p \times p} positive-definite precision matrix \eqn{\Theta_0}
 (the inverse covariance) with one of four toy graph structures:
 \itemize{
-\item \code{"tridiagonal"} — unit diagonal with band-1 off-diagonals (0.25);
-\item \code{"hubs"} — nodes partitioned into equal-size groups with a hub node per group connected to all others (weight 0.25);
-\item \code{"cliques neg"} — random 3-node cliques with \strong{negative} partial correlations (off-diagonals -0.45);
-\item \code{"cliques pos"} — random 3-node cliques with \strong{positive} partial correlations (off-diagonals 0.75).
+\item \code{"tridiagonal"} - unit diagonal with band-1 off-diagonals (0.25);
+\item \code{"hubs"} - nodes partitioned into equal-size groups with a hub node per group connected to all others (weight 0.25);
+\item \code{"cliques neg"} - random 3-node cliques with \strong{negative} partial correlations (off-diagonals -0.45);
+\item \code{"cliques pos"} - random 3-node cliques with \strong{positive} partial correlations (off-diagonals 0.75).
 }
 }
 \examples{

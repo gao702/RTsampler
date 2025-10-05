@@ -259,9 +259,9 @@ List RT_sampler_cpp(const arma::mat& Y, int M, int burnin, int seed, const std::
   // ==== MCMC loop ====
   for (int m = 0; m < M; ++m) {
     // if (m % 100 == 0) {
-    //   std::cout << "m = " << m << std::endl;
+    //   Rcpp::Rcout << "m = " << m << std::endl;
     // }
-    std::cout << "\rIteration m = " << m << std::flush;
+    Rcpp::Rcout << "\rIteration m = " << m << std::flush;
 
     arma::mat C(p, p, fill::zeros);
 
@@ -350,7 +350,7 @@ List RT_sampler_cpp(const arma::mat& Y, int M, int burnin, int seed, const std::
       tau2_save(idx) = tau2;
     }
   }
-  std::cout << std::endl;
+  Rcpp::Rcout << std::endl;
 
   return List::create(
     Named("Omega_save") = Omega_save,

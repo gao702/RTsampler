@@ -1,7 +1,7 @@
 #' Graphical Horseshoe / Horseshoe-Lasso (RT) Sampler (C++ backend)
 #'
 #' @description
-#' High-performance Reverse–Telescoping (RT) MCMC sampler for sparse precision
+#' High-performance Reverse-Telescoping (RT) MCMC sampler for sparse precision
 #' matrices under the Graphical Horseshoe (\code{"GHS"}) or Graphical Horseshoe Lasso
 #' (\code{"GHSL"}) priors. This is a thin R wrapper to a C++ implementation exported
 #' via Rcpp.
@@ -22,6 +22,8 @@
 #' @export
 #' @useDynLib RTsampler, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
+#' @importFrom GIGrvg rgig
+#' @importFrom Matrix nearPD
 #'
 #' @name RT_sampler_cpp
 #' @rdname RT_sampler_cpp

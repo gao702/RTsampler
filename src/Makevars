@@ -8,3 +8,6 @@ CXX_STD = CXX17
 
 # (Optional) Same switch here if you want to avoid BLAS/LAPACK:
 # PKG_CPPFLAGS += -DARMA_DONT_USE_WRAPPER
+
+# Do NOT set PKG_CFLAGS / PKG_CXXFLAGS / -O2 / -g / -flto here.
+# Let R pick optimization and debug flags for portability.

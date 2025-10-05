@@ -8,3 +8,6 @@ CXX_STD = CXX17
 
 # (Optional) If you need to force Armadillo to avoid external BLAS/LAPACK, uncomment:
 # PKG_CPPFLAGS += -DARMA_DONT_USE_WRAPPER
+
+# Do NOT set PKG_CFLAGS / PKG_CXXFLAGS / -O2 / -g / -flto here.
+# Let R pick optimization and debug flags for portability.

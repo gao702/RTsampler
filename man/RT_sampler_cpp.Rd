@@ -23,7 +23,7 @@ A list with components:
 }
 }
 \description{
-High-performance Reverse–Telescoping (RT) MCMC sampler for sparse precision
+High-performance Reverse-Telescoping (RT) MCMC sampler for sparse precision
 matrices under the Graphical Horseshoe (\code{"GHS"}) or Graphical Horseshoe Lasso
 (\code{"GHSL"}) priors. This is a thin R wrapper to a C++ implementation exported
 via Rcpp.
