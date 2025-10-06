@@ -1,9 +1,7 @@
-RTsampler
-================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# RTsampler
+# RTsampler:
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -20,7 +18,7 @@ We provide an RT (Reverse–Telescoping) sampler alongside a baseline
 Cyclical sampler for comparison, as well as example script to generate
 ground-truth precision matrices for simulation studies.
 
-## Installation
+## Installation:
 
 This package can be installed directly from github using the R package
 `devtools`.
@@ -42,7 +40,7 @@ for Gaussian Graphical Model under element-wise prior on the precision
 matrix, which achieves an order of magnitude time complexity reduction
 compared to the cyclical sampler in high dimensions.
 
-## Example
+## Example:
 
 This is a basic example script that simulates data from a multivariate
 normal model and fits the GHS model using RT and cyclical samplers:
@@ -106,4 +104,4 @@ image(1:p, 1:p, est_matrix_Cyclical)
 
 \[1\] Gao, Z., Sagar, K., Bhadra, A. (2025). An Order of Magnitude Time
 Complexity Reduction for Gaussian Graphical Model Posterior Sampling
-Using a Reverse Telescoping Block Decomposition
+Using a Reverse Telescoping Block Decomposition. [arXiv:2509.26385](https://arxiv.org/abs/2509.26385).
